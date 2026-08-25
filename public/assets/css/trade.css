@@ -1,0 +1,859 @@
+.grid-box-futures {
+    display: grid;
+    grid-template-areas:
+        "recentliveprice recentliveprice recentliveprice recentliveprice"
+        "livepricelist livepricelist livepricelist  livepricelist"
+        "chart chart orderbook orderform"
+        "openorder openorder openorder account";
+    grid-template-columns: 1fr 350px 370px 390px;
+    grid-gap: 3px;
+    margin: 0px 5px;
+    border-radius: 5px;
+}
+
+.mobilegrid {
+    grid-area: mobilegrid;
+    display: none;
+}
+
+.account {
+    grid-area: account;
+}
+
+.livepricelist {
+    grid-area: livepricelist;
+    overflow: visible !important;
+    border-left: 0px !important;
+}
+
+.livepricenavbg {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+
+.livepricenavbg>li:first-child {
+    padding-left: 5px;
+}
+
+.grid-box-futures .livepricenavbg>li:first-child {
+    padding-left: 0;
+}
+
+.grid-box-futures .livepricenavbg>li {
+    padding: 0px 0px;
+    width: auto !important;
+}
+
+.daymode .grid-box-futures .livepricenavbg>li {
+    border-color: #ececec !important;
+}
+
+.grid-box-futures .marketlist .dropdown-toggle {
+    font-size: 16px;
+}
+
+.grid-box-futures .livepricenavbg {
+    margin-top: 7px;
+}
+
+.grid-box-futures .livepricenavbg .dropdown-toggle .coinlisticon {
+    width: 26px;
+}
+
+.grid-box-futures .livepricemobile li .badge {
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 10px;
+    border-radius: 7px;
+    min-width: 55px;
+}
+
+.smbadegbox {
+    font-size: 10px;
+    padding: 3px 6px;
+    min-width: auto;
+    font-weight: 600;
+    background-color: #006553 !important;
+}
+
+.btn-close-new {
+    padding: 4px 12px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.font-size-x-a .active {
+    color: #6766FF !important;
+    font-size: 12px;
+}
+
+.openorder .simplebar-wrapper {
+    max-height: 150px;
+}
+
+.suborderbook.buysellshow #sellorderbox,
+.suborderbook.buysellshow #buyorderbox,
+.suborderbook.buysellshow #livepricebox {
+    display: block !important;
+}
+
+.grid-box-futures .buyboxorder,
+.grid-box-futures .sellboxorder {
+    min-height: 280px;
+}
+
+.grid-box-futures .buyboxorder .sitescroll,
+.grid-box-futures .sellboxorder .sitescroll {
+    max-height: 280px;
+}
+
+.grid-box-futures .sellboxorder .sitescroll {
+    height: 280px;
+}
+
+.grid-box-futures .recenthistory .sitescroll {
+    max-height: 635px;
+}
+
+.grid-box-futures .sellshow .sellboxorder .sitescroll,
+.grid-box-futures .buyshow .buyboxorder .sitescroll {
+    max-height: 720px;
+}
+
+.charttabbg {
+    border-bottom: 0px !important;
+
+}
+
+.futurespage .buyselltabbg {
+    background: transparent !important;
+}
+
+.top-p-tt {
+    margin-bottom: 0px !important;
+    font-size: 12px !important;
+    line-height: 24px !important;
+    color: #d9d9d9 !important;
+}
+
+.tradepage .sitetable tbody tr td.staricon.selected {
+    color: #FFC107 !important;
+}
+
+.grid-box-futures .sitetable tbody tr td {
+    font-size: 12px !important;
+}
+
+.tradepage .sitetable tbody tr td,
+.sitetable thead tr th {
+    padding: 4px;
+}
+
+.font-size-x {
+    font-size: 12px !important;
+    color: #d7d7d7 !important;
+}
+
+/* .orderformbox .limitabbg{
+    border-bottom: 1px solid #fff;
+} */
+
+.moredrp {
+    padding: 0px 0px !important;
+    background: none !important;
+    border: 0;
+    font-weight: 500;
+    color: #bababa !important;
+    font-size: 12px !important;
+    margin-top: -2px !important;
+}
+
+.batch-li {
+    color: #1bb79b;
+    background-color: #66f0;
+    border-radius: 4px;
+    padding: 2px 4px !important;
+}
+
+.clpbox {
+    padding: 8px;
+}
+
+.clpbox .sitetable tbody tr td:last-child {
+    text-align: end;
+}
+
+.clpbox .accordion-item {
+    background: transparent;
+    border: 0;
+}
+
+.orderexcutionbox .sitetable tbody tr td:last-child {
+    text-align: right;
+}
+
+.orderexcutionbox .sitetable tbody tr td {
+    padding: 2px 1px !important;
+    font-size: 12px !important;
+}
+
+.tooltip-label {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.unit-select {
+    max-width: 65px;
+    height: 34px;
+    border: 1px solid #083029 !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.odrbtns .sitebtn {
+    width: 100%;
+}
+
+.orderform hr {
+    margin: 4px 0px;
+}
+
+.unit-select:focus,
+.trade-input:focus {
+    box-shadow: none !important;
+    border-color: #30e0c1 !important;
+}
+
+.accordion-header {
+    margin-bottom: 0;
+}
+
+.transfer-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #c1c1c1;
+    font-weight: 400;
+}
+
+.clpbox .accordion-button {
+    padding: 10px 0px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.clpbox .accordion-button::after {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+    background-size: 60%;
+    background-position: bottom;
+}
+
+.clpbox .accordion-body {
+    padding: 0px 0px 10px 0px;
+}
+
+.advwidth>div {
+    width: 100%;
+}
+
+.data-bg {
+    background-color: #161141 !important;
+    border-radius: 6px !important;
+}
+
+.borderbtn-Mid-red {
+    border: 1px solid #f85858 !important;
+    color: #f85858 !important;
+    background: transparent !important;
+    border-radius: 50px;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.slider-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.form-group.rangesliderbox {
+    background: none !important;
+    margin-top: 10px;
+}
+
+.openorder {
+    grid-area: openorder;
+    border-left: 0px !important;
+    border-bottom: 0px !important;
+}
+
+.tabrightbox {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+}
+
+.coindropslectboxbg {
+    background: transparent !important;
+    border: none;
+}
+
+.orderformbg1 select.form-control,
+.orderformbg1 .dropdown-toggle {
+    border: 0px;
+    background: none;
+    font-size: 12px !important;
+}
+
+.orderformbox .stoptrrow.btn {
+    background: none !important;
+    padding: 0px !important;
+    margin-top: 0px;
+    font-size: 14px;
+    color: #c1c1c1;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    line-height: normal;
+}
+
+.buyshow .buyboxorder,
+.sellshow .sellboxorder {
+    display: block !important;
+    max-height: 470px;
+}
+
+.suborderbook.buyshow #sellorderbox,
+.suborderbook.buyshow #livepricebox {
+    display: none !important;
+}
+
+.suborderbook.buyshow #buyorderbox {
+    display: block !important;
+    max-height: 434px;
+}
+
+.buysellshow .buyboxorder,
+.buysellshow .sellboxorder {
+    display: block !important;
+    max-height: 650px;
+}
+
+.suborderbook.sellshow #livepricebox,
+.suborderbook.buyshow #livepricebox {
+    display: none !important;
+}
+
+a.buysellshow.chart-icon.nav-link.active {
+    background: #6666ff5e;
+    border-radius: 10px !important;
+    padding: 4px 8px !important;
+    border-bottom: none !important;
+}
+
+.livepricet .text-main-tt {
+    font-size: 18px;
+    width: 100px;
+}
+
+.grid-box-futures .livepricet span {
+    display: inline-block !important;
+    float: none !important;
+}
+
+.orderfrmtab .dropdown-item,
+.orderfrmtab .moredrp {
+    font-size: 13px !important;
+}
+
+.rangeslider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    outline: none;
+    accent-color: #6766FF;
+}
+
+/* Custom styling for track and thumb to ensure consistency across browsers */
+.rangeslider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: linear-gradient(to right, #6766FF 0%, #6766FF var(--range-percent), #ffffff1a var(--range-percent), #ffffff1a 100%);
+    border-radius: 5px;
+}
+
+.rangeslider::-webkit-slider-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #6766FF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+    /* Centers thumb on track */
+}
+
+.rangeslider::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: linear-gradient(to right, #6766FF 0%, #6766FF var(--range-percent), #ffffff1a var(--range-percent), #ffffff1a 100%);
+    border-radius: 5px;
+}
+
+.rangeslider::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #6766FF;
+    cursor: pointer;
+    border: none;
+}
+
+.grid-box-futures .chart .tab-content,
+.grid-box-futures .tradechartlist.active,
+.grid-box-futures .tradechartlist>div,
+.grid-box-futures .tradechartlist>div>div {
+    min-height: 660px;
+}
+
+/* Three Dot Button */
+.orderbook-dots {
+    background: transparent !important;
+    border: none !important;
+    color: #8b9db0 !important;
+    padding: 4px 8px !important;
+    box-shadow: none !important;
+}
+
+.orderbook-dots::after {
+    display: none !important;
+}
+
+.orderbook-dots:hover,
+.orderbook-dots:focus,
+.orderbook-dots:active {
+    background: #ffffff00 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+.daymode .orderbook-dots:hover,
+.daymode .orderbook-dots:focus,
+.daymode .orderbook-dots:active {
+    color: #000 !important;
+}
+
+/* Dropdown */
+.orderbook-dropdown {
+    background: #0a1e1e;
+    border-radius: 8px;
+    min-width: 140px;
+    box-shadow: 0 8px 20px #00000040;
+}
+
+.daymode .orderbook-dropdown {
+    background: #fff;
+}
+
+/* Menu Items */
+.orderbook-dropdown .dropdown-item {
+    color: #c5d0db;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px 14px;
+    transition: all 0.2s ease;
+}
+
+.daymode .orderbook-dropdown .dropdown-item {
+    color: #000;
+}
+
+.orderbook-dropdown .dropdown-item:hover {
+    color: #0fbfa0;
+    background: #00000000;
+}
+
+.orderbook-dropdown .dropdown-item.active,
+.orderbook-dropdown .dropdown-item:active {
+    background: #00000000 !important;
+    color: #0fbfa0 !important;
+}
+
+.suborderbook .tabrightbox {
+    right: 0px;
+}
+
+/* Optional Selected Tick Style */
+.orderbook-dropdown .dropdown-item.selected {
+    background: #00000000;
+    color: #0fbfa0;
+}
+
+.orderbookscroll .sitetable tbody tr td:last-child {
+    width: 165px;
+}
+
+/* ── STACKED ── */
+.stacked-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.stacked-orderbook {
+    flex: 1;
+    overflow: hidden;
+}
+
+.stacked-divider {
+    height: 1px;
+    background: #2a2d35;
+    margin: 4px 0;
+}
+
+.stacked-trades {
+    flex: 1;
+    overflow: hidden;
+}
+
+/* ── LARGE ── */
+.large-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    height: 100%;
+}
+
+.large-orderbook,
+.large-trades {
+    overflow: hidden;
+}
+
+.grid-box-futures.ob-stacked-view .buyboxorder,
+.grid-box-futures.ob-stacked-view .sellboxorder {
+    min-height: 150px;
+}
+
+.digitformbox {
+    width: 100%;
+}
+
+.digitformbox .d-flex {
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.grid-box-futures.ob-stacked-view .sellboxorder .sitescroll {
+    height: 150px;
+}
+
+.ob-tab-view .od-head {
+    display: none;
+}
+
+.ob-large-view .od-head,
+.ob-stacked-view .od-head {
+    display: block;
+}
+
+.ob-large-view .orderbook .historytab .tabbanner,
+.ob-stacked-view .orderbook .historytab .tabbanner {
+    display: none !important;
+}
+
+.ob-stacked-view .sitescroll {
+    max-height: 205px;
+}
+
+.grid-box-futures.ob-large-view {
+    grid-template-columns: 1fr 290px 290px 340px;
+    grid-template-areas:
+        "recentliveprice recentliveprice recentliveprice recentliveprice"
+        "livepricelist livepricelist livepricelist livepricelist"
+        "chart orderbook orderbook orderform"
+        "chart orderbook orderbook orderform"
+        "openorder openorder openorder account";
+}
+
+.large-orderbook {
+    border-right: 1px solid #ffffff29;
+    margin-right: -5px;
+    padding-right: 3px;
+}
+
+.grid-box-futures .openorder .sitescroll,
+.grid-box-futures .orderhistory .sitescroll {
+    min-height: 242px;
+    max-height: 245px;
+}
+
+.orderbook .orderbook-dropdown .dropdown-item.active {
+    background: #006553 !important;
+    color: #fff !important;
+    border-radius: 0px !important;
+}
+
+.pop-range .rangesliderbox {
+    padding-bottom: 30px;
+}
+
+.pop-range .rangesliderbox .slider-tick-label {
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.daymode .pop-range .rangesliderbox .slider-tick-label {
+    color: #000;
+}
+
+@media (max-width: 1400px) {
+
+    .grid-box-futures .chart .tab-content,
+    .grid-box-futures .tradechartlist.active,
+    .grid-box-futures .tradechartlist>div,
+    .grid-box-futures .tradechartlist>div>div {
+        min-height: 420px;
+    }
+
+    .grid-box-futures.ob-large-view {
+        grid-template-columns: 1fr 400px 370px;
+        grid-template-areas:
+            "recentliveprice recentliveprice  recentliveprice"
+            "livepricelist livepricelist livepricelist"
+            "chart chart chart"
+            "orderform orderbook orderbook"
+            "openorder openorder account";
+    }
+
+    .grid-box-futures {
+        grid-template-columns: 1fr 400px 370px;
+        grid-template-areas:
+            "recentliveprice recentliveprice  recentliveprice"
+            "livepricelist livepricelist livepricelist"
+            "chart chart chart"
+            "orderform orderform orderbook"
+            "openorder openorder account";
+    }
+}
+
+@media (max-width: 1200px) {
+    .grid-box-futures .livepricenavbg>li {
+        padding: 0 14px;
+    }
+
+    .grid-box-futures.ob-large-view {
+        grid-template-columns: 1fr 290px 330px;
+    }
+
+    .grid-box-futures {
+        grid-template-columns: 1fr 468px;
+        grid-template-areas:
+            "recentliveprice recentliveprice"
+            "livepricelist livepricelist"
+            "chart chart"
+            "orderform orderbook"
+            "orderform account"
+            "openorder openorder";
+    }
+}
+
+@media (max-width: 1100px) {
+    .grid-box-futures {
+        /* grid-template-columns: 1fr 263px 268px; */
+    }
+}
+
+@media (max-width: 1080px) {
+    .grid-box-futures .livepricemobile li a .badge {
+        min-width: 48px;
+        padding: 2px 8px;
+        font-size: 10px;
+        margin-top: 9px;
+    }
+
+    .grid-box-futures .livepricenavbg .dropdown-toggle .coinlisticon {
+        width: 22px;
+    }
+
+    .grid-box-futures .marketlist .dropdown-toggle {
+        font-size: 14px;
+    }
+
+    .grid-box-futures .livepricemobile li a,
+    .grid-box-futures .livepricet span {
+        font-size: 12px;
+    }
+
+    .grid-box-futures .sellboxorder .sitescroll {
+        height: 155px;
+    }
+
+    .grid-box-futures .buyboxorder,
+    .grid-box-futures .sellboxorder {
+        min-height: 160px;
+    }
+
+    .livepricenavbg {
+        padding: 0px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow-x: inherit;
+    }
+
+    .grid-box-futures {
+        grid-template-columns: 1fr 380px;
+    }
+
+    .chart .tab-content,
+    .tradechartlist.active,
+    .tradechartlist>div,
+    .tradechartlist>div>div {
+        min-height: 350px;
+    }
+}
+
+@media (max-width:991px) {
+
+    .grid-box-futures .livepricenavbg>li:first-child {
+        padding: 11px 11px !important;
+    }
+
+    .grid-box-futures .livepricenavbg>li {
+        padding: 5px 14px !important;
+        margin: 2px;
+        border-radius: 4px;
+        border: 1px solid #ffffff2b !important;
+        min-width: 290px;
+    }
+}
+
+@media (max-width:767px) {
+    .grid-box-futures .livepricenavbg>li {
+        width: 100% !important;
+        min-width: 270px;
+    }
+
+    /* .grid-box-futures .livepricenavbg>li {
+        width: 49% !important;
+        min-width: 270px;
+    } */
+
+    .openorder .innerpagetab,
+    .orderbook-menu {
+        display: none;
+    }
+
+    .grid-box-futures {
+        grid-template-areas: "recentliveprice recentliveprice"
+            "livepricelist livepricelist"
+            "mobilegrid mobilegrid"
+            "chart chart"
+            "orderbook orderbook"
+            "orderform orderform"
+            "account account"
+            "openorder openorder";
+    }
+}
+
+@media (max-width: 650px) {
+    .livepricenavbg>li {
+        line-height: 13px;
+        padding: 4px 11px !important;
+        padding-top: 3px;
+        width: 50%;
+        min-height: 39px;
+        border: 1px solid #ffffff00 !important;
+        margin-top: -1px;
+        margin-right: -1px;
+    }
+
+
+    .chart .tab-content,
+    .tradechartlist.active,
+    .tradechartlist>div,
+    .tradechartlist>div>div {
+        min-height: 400px;
+    }
+
+    .chart .contentbox,
+    .marketdepth .contentbox {
+        padding: 10px 0px 0px;
+    }
+
+    .sitetable tbody tr td {
+        padding: 5px 10px;
+    }
+
+
+    .livepricemobile {
+        padding: 10px;
+    }
+
+    /* .livepricelist {
+        overflow-x: auto !important;
+        scrollbar-width: thin;        
+        scrollbar-color: #54545cba #f1f1f100;
+       
+    }
+
+   
+    .livepricelist::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .livepricelist::-webkit-scrollbar-track {
+        background: #f1f1f100;
+        border-radius: 10px;
+    }
+
+    .livepricelist::-webkit-scrollbar-thumb {
+        background: #54545cba;
+        border-radius: 10px;
+    }
+
+    .livepricelist::-webkit-scrollbar-thumb:hover {
+        background: #54545cba;
+    }
+
+    .livepricelist::-webkit-scrollbar-button {
+        display: none;
+        width: 0;
+        height: 0;
+    } */
+
+}
+
+@media (max-width: 550px) {
+    .grid-box-futures .livepricenavbg>li {
+        width: 100% !important;
+    }
+
+    .tradepage .innerpagetab .tabbanner .nav-item .nav-link,
+    .tradepage .innerpagetab .tabbanner .nav-item .nav-link {
+        padding: 6px !important;
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .grid-box-futures .livepricenavbg>li {
+        width: auto !important;
+    }
+}
