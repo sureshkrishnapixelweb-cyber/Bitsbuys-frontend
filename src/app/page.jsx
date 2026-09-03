@@ -8,7 +8,7 @@ import {
   Accordion,
   AccordionItem,
   AccordionHeader,
-  AccordionBody,
+  Modal,
   Row,
   Col,
   Table,
@@ -29,6 +29,16 @@ import Offersection from "./components/Offersection";
 export default function Home() {
   const [activeKey, setActiveKey] = useState("1");
 
+  const [showModal1, setShowModal1] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
+
+  const handleClose1 = () => {
+    setShowModal1(false);
+  };
+
+  useEffect(() => {
+    setShowModal1(true);
+  }, []);
   return (
     <>
 
@@ -1011,10 +1021,10 @@ export default function Home() {
                 </h2>
                 <p>
                   Trade perpetual futures with powerful execution tools,
-                  real-time market data, and flexible margin options. Whether you're
+                  real-time market data, and flexible margin options. Whether you re
                   opening short-term positions or managing long-term strategies, BitsBuys delivers a seamless multi-chain
                   trading experience with the speed, transparency, and control that professional traders demand.Trade perpetual futures with
-                  powerful execution tools, real-time market data, and flexible margin options. Whether you're opening
+                  powerful execution tools, real-time market data, and flexible margin options. Whether you re opening
                   short-term positions or managing long-term strategies, BitsBuys delivers a seamless multi-chain
                   trading experience with the speed, transparency, and control that professional traders demand.
                 </p>
@@ -1292,6 +1302,54 @@ export default function Home() {
           </Container>
         </section>
         <Homefooter />
+        <Modal show={showModal1} onHide={handleClose1} className="modalbgt authmodal bitsbuys-coming-modal" aria-labelledby="contained-modal-title-vcenter" centered >
+          <Modal.Header closeButton>
+            <Modal.Title></Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <div className="coming-soon-content text-center">
+
+              {/* Vector Illustration */}
+              <div className="coming-soon-vector">
+                <div className="vector-glow"></div>
+                <div className="vector-circle">
+                  <span className="vector-icon">🚀</span>
+                </div>
+                <span className="vector-dot dot-one"></span>
+                <span className="vector-dot dot-two"></span>
+                <span className="vector-dot dot-three"></span>
+              </div>
+
+              {/* Content */}
+              <div className="coming-soon-text">
+
+                <span className="coming-badge mb-3">
+                  <span className="badge-dot"></span>
+                  COMING SOON
+                </span>
+
+                <h2>
+                  BitsBuys Is Almost <span>Live!</span>
+                </h2>
+
+                <p className="coming-subtitle">
+                  Be the first to know when BitsBuys Exchange officially launches.
+                </p>
+                <Form className="siteformbg">
+                  <Form.Group className="form-group mb-3 text-start">
+                    <Form.Label> Get launch updates</Form.Label>
+                    <Form.Control type="text" name="" id="launch-email" className="mb-2" />
+                    <small className="t-gray"> We’ll only use your email for BitsBuys launch
+                      updates. No spam.</small>
+                  </Form.Group>
+                  <button type="button" className="sitebtn btn-sm w-100" onClick={handleClose1}                >
+                    Notify Me
+                  </button>
+                </Form>
+              </div>
+            </div>
+          </Modal.Body>
+        </Modal>
       </div>
     </>
   );
