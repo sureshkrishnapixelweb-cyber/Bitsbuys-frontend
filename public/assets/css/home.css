@@ -1884,7 +1884,28 @@ body.loginbanner.daymode {
 
 
 
-footer {}
+/* footer {} */
+.verification-twofactor-page .social-btn:hover {
+  background: #00655333;
+  border: 1px solid #006553;
+}
+
+.verification-twofactor-page .social-btn {
+  background: #00655333;
+  border: 1px solid #006553;
+  cursor: auto;
+  justify-content: space-between;
+}
+
+.faAngleRight-point {
+  cursor: pointer;
+}
+
+.faCircleCheck-tick,
+.green-hh {
+  color: #0abab5 !important;
+}
+
 
 /* Media Queries */
 
